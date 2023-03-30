@@ -1,0 +1,117 @@
+.scheduleWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.day{
+    border-bottom: 1px rgb(0, 165, 181) solid;
+    background-color: rgb(0, 165, 181, 0.1);
+    padding: 5px;
+}
+.shiftCount {
+    padding-left: 5px;
+}
+
+.name {
+    width: 90%;
+    font-size: 18px;
+}
+
+.scheduleItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1 1 auto;
+}
+
+.scheduleItem:not(:last-child) {
+    border-right: 1px rgb(0, 165, 181) solid;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+}
+
+.shift {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 120px;
+    border-bottom: 1px rgb(0, 165, 181) solid;
+}
+
+.shiftItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+@media (max-width: 1090px) {
+    .day {
+        padding-top: 25px;
+    }
+    .scheduleItem {
+        justify-content: center;
+        flex: 0 1 auto;
+        width: 30%;
+    }
+
+    .scheduleItem:nth-child(3n+1){
+        border-left: 1px rgb(0, 165, 181) solid;
+    }
+    
+    .scheduleItem:last-child {
+        border: 1px rgb(0, 165, 181) solid;
+        border-bottom: none;
+    }
+    .scheduleItem:nth-child(7){
+        border-top: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .scheduleWrapper{
+        justify-content: flex-start;
+    }
+    .scheduleItem {
+        justify-content: center;
+        flex: 0 1 auto;
+        width: 50%;
+    }
+
+    .scheduleItem:nth-child(2n+1){
+        border-left: 1px rgb(0, 165, 181) solid;
+    }
+    
+    .scheduleItem:nth-child(4){
+        border-left: none;
+    }
+    .scheduleItem:nth-child(7){
+        border-top: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .scheduleItem {
+        justify-content: center;
+        flex: 0 1 auto;
+        width: 100%;
+    }
+
+    .scheduleItem{
+        border-left: 1px rgb(0, 165, 181) solid;
+    }
+    
+    .scheduleItem:nth-child(4){
+        border-left: 1px rgb(0, 165, 181) solid;
+    }
+}
