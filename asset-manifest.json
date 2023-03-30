@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/schedule-maker-app/static/css/main.07e7e8cb.css",
+    "main.js": "/schedule-maker-app/static/js/main.b6416539.js",
+    "static/js/787.28cb0dcd.chunk.js": "/schedule-maker-app/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/schedule-maker-app/index.html",
+    "main.07e7e8cb.css.map": "/schedule-maker-app/static/css/main.07e7e8cb.css.map",
+    "main.b6416539.js.map": "/schedule-maker-app/static/js/main.b6416539.js.map",
+    "787.28cb0dcd.chunk.js.map": "/schedule-maker-app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07e7e8cb.css",
+    "static/js/main.b6416539.js"
+  ]
+}
